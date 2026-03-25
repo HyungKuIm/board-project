@@ -23,6 +23,10 @@ onMounted(() => {
   <div>
     <h2>게시판 목록</h2>
 
+    <RouterLink to="/posts/create">
+      <button>글 등록</button>
+    </RouterLink>
+
     <ul>
       <li v-for="post in posts" :key="post._id">
         <h3>{{ post.title }}</h3>
